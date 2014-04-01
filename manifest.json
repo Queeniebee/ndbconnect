@@ -8,6 +8,6 @@
     }
   },
   "permissions":[
-  "http://localhost"
+  "http://172.26.14.7"
   ]
 }
