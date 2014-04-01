@@ -1,6 +1,8 @@
 window.onload = function(){
 
-				var entered_devicename;
+				var entered_devicename,
+					entered_devicenamewrite,
+					entered_value;
 
     			$("#getrecordbydevice").click(function(){
 
@@ -16,4 +18,15 @@ window.onload = function(){
     						});
     					});
     				});
+    			
+    			$("#writevalout").click(function(){
+
+    					entered_devicenamewrite = $('#devicenamevalwrite').val();
+    					entered_value = $('#writevalue').val();
+    					var url = 'http://localhost:10080/write?devicename='+entered_devicenamewrite+ '&val1=' + entered_value;
+    					$.get(url,function(data){
+    					//callback goes here on success
+    					});
+
+    			});
     		}
