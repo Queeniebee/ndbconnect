@@ -1,16 +1,23 @@
 <!doctype html>
-<html ng-app    ng-csp>
+<html>
 	<head>
-		<script src="angular.min.js"></script>
-    	<script src="controller.js"></script>
-    	<link rel="stylesheet" href="todo.css">
+		<script src="jquery.min.js" ></script>
+		<script src="script.js"></script>
     </head>
-    <body ng-app ng-init="name='World'">
-    	<h1>Hello, {{name}}</h1>
-    	<div ng-app="HelloCtrl">
-    		Say hello to: <input type="text" ng-model="name">
-    		<h2>Hello, {{name}}!</h2>
+    <body>
+    	<div id="readvaluesin">
+    		<label>device name<input type="text" id="devicenameval" value="" placeholder="enter name of device"></label>
+    			<h2></h2>
+    		
+    		<button id="getrecordbydevice">Latest reading</button>
     	</div>
+    		
+
+    	<div id="readreqresp">
+    		<h2 id='singleval'></h2>
+    	</div>
+
+    	
     </body>
 </html>
     
